@@ -17,7 +17,7 @@ if [[ $# -eq 0 ]]; then
     exit 1
 fi
 
-# Check for --help first
+# Special case: if first arg is --help
 if [[ "$1" == "--help" ]]; then
     print_help
     exit 0
@@ -67,18 +67,22 @@ fi
 line_number=0
 while IFS= read -r line; do
     ((line_number++))
+    should_print=false
+
     if echo "$line" | grep -iq "$search_string"; then
-        match=true
-    else
-        match=false
+        should_print=true
     fi
 
-    # Invert match if -v is set
+    # Invert logic if -v is set
     if $invert_match; then
-        match=$(! $match && echo true || echo false)
+        if $should_print; then
+            should_print=false
+        else
+            should_print=true
+        fi
     fi
 
-    if $match; then
+    if $should_print; then
         if $show_line_numbers; then
             echo "${line_number}:$line"
         else
@@ -86,3 +90,4 @@ while IFS= read -r line; do
         fi
     fi
 done < "$filename"
+
