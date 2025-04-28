@@ -9,9 +9,9 @@ First, I verified if `internal.example.com` can be resolved by the system's DNS 
 dig internal.example.com
 dig @8.8.8.8 internal.example.com
 ```
-
-- ![Screenshot DNS system](path/to/screenshot1.png)
-- ![Screenshot DNS 8.8.8.8](path/to/screenshot2.png)
+![1](https://github.com/user-attachments/assets/8b9d3e1a-d8f5-49fa-b856-26b32b04031a)
+- ![Screenshot DNS system]![2](https://github.com/user-attachments/assets/446a63c6-ef61-46dc-ae82-76be146b29b8)
+- ![Screenshot DNS 8.8.8.8] ![3](https://github.com/user-attachments/assets/81404f93-4ae4-492e-b4e2-8b55091c2063)
 
 > **Analysis:**  
 > If resolution with the local DNS fails but works with 8.8.8.8, it indicates an issue with the internal DNS server settings.
