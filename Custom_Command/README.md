@@ -19,6 +19,29 @@
 
 ---
 
+## Demonstration Screenshots
+✅ ./mygrep.sh hello testfile.txt
+
+![1](https://github.com/user-attachments/assets/c165160f-380a-4bbd-94ad-4c15ca556997)
+
+✅ ./mygrep.sh -n hello testfile.txt
+
+![2](https://github.com/user-attachments/assets/a5c1b30e-7193-4565-b4a1-3eb5f81248b0)
+
+✅ ./mygrep.sh -n -v hello testfile.txt
+
+![4](https://github.com/user-attachments/assets/83c753c9-0401-4174-94de-74eaf9bc8923)
+
+✅ ./mygrep.sh -vn hello testfile.txt
+
+![5](https://github.com/user-attachments/assets/359c93f6-b625-461b-abc8-6494cb39dee5)
+
+✅ ./mygrep.sh -v testfile.txt
+
+![3](https://github.com/user-attachments/assets/7c4c74ca-b305-4252-bcb5-076296df30bc)
+
+--- 
+
 ## Reflective Paragraph
 
 If I were to extend the script to support regular expressions (`regex`) and more options like `-i`, `-c`, or `-l`, I would redesign the matching part by:
