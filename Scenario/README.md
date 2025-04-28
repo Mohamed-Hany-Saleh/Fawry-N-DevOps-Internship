@@ -30,8 +30,10 @@ curl -I http://internal.example.com
 ss -tuln | grep ':80\|:443'
 ```
 
-- ![Screenshot service reachability](path/to/screenshot3.png)
-- ![Screenshot listening ports](path/to/screenshot4.png)
+- ![Screenshot service reachability]![4](https://github.com/user-attachments/assets/31aca173-8b3f-4153-ae03-9525ef4e9b17)
+
+- ![Screenshot listening ports]file:///home/mohammed/fawry/Fawry%20N%C2%B2%20DevOps%20Internship/Scenario/5.png
+
 
 > **Analysis:**  
 > If connection refused or no response → Web server or firewall/network issues exist.  
@@ -80,7 +82,12 @@ Add:
 192.168.x.x internal.example.com
 ```
 
-- ![Screenshot hosts file](path/to/screenshot5.png)
+- ![Screenshot hosts file]
+  ![6](https://github.com/user-attachments/assets/b26d63e7-c6f1-455e-b129-eca64761598e)
+  ![7](https://github.com/user-attachments/assets/b6fb2c3a-cb6a-4ef1-af3c-69b3b8faad68)
+  ![8](https://github.com/user-attachments/assets/ba71f125-9f78-45ba-928d-56810da3e0d0)
+
+
 
 ### Persisting DNS Settings
 
@@ -98,7 +105,20 @@ nmcli con mod <connection-name> ipv4.dns "8.8.8.8"
 nmcli con up <connection-name>
 ```
 
-- ![Screenshot DNS persist](path/to/screenshot6.png)
+- ![Screenshot DNS persist]
+  ![10](https://github.com/user-attachments/assets/4d5c1a2f-429c-4b5b-8781-ef2d7a0c825d)
+  ![11](https://github.com/user-attachments/assets/6749f644-e84a-4b6b-ad83-82c2e54aa3f8)
+  ![12](https://github.com/user-attachments/assets/52a3b834-0a7c-43a4-a40b-ed4f74657f17)
+  ![13](https://github.com/user-attachments/assets/7bca2db9-2908-4a06-8f9f-a966b41efbbd)
+  ![14](https://github.com/user-attachments/assets/9ae5031b-0097-48fc-8576-cbb68879b4df)
+  ![15](https://github.com/user-attachments/assets/35d4dabe-d3d4-4ff4-879b-33e2f9b76880)
+
+
+
+
+
+
+
 
 ---
 
