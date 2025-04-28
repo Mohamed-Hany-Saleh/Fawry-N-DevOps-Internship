@@ -85,9 +85,6 @@ Add:
 - ![Screenshot hosts file]
   ![6](https://github.com/user-attachments/assets/b26d63e7-c6f1-455e-b129-eca64761598e)
   ![7](https://github.com/user-attachments/assets/b6fb2c3a-cb6a-4ef1-af3c-69b3b8faad68)
-  ![8](https://github.com/user-attachments/assets/ba71f125-9f78-45ba-928d-56810da3e0d0)
-
-
 
 ### Persisting DNS Settings
 
